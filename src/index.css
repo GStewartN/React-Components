@@ -2,12 +2,41 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #ccc;
 }
 
 #Header {
   text-align: center;
-  background-color: #222;
-  height: 100px;
-  padding: 20px;
+  background-color: #000;
+  height: 45px;
+  padding-bottom: 20px;
   color: white;
+  border: solid 5px #999;
+}
+
+select {
+  margin: 50px;
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 2px solid #999;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.vanhumbeeckfreres.be%2Fsites%2Fall%2Fthemes%2Frebuild%2Fdist%2Fimg%2Farrow_down.svg&f=1) 96% / 15% no-repeat #000;
+  font-family: sans-serif;
+  color: white;
+}
+
+select::-ms-expand {
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
 }

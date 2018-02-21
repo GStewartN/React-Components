@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import DropDownSelect from './DropDownSelect';
 
 const App = () => {
   return (
@@ -7,9 +8,9 @@ const App = () => {
       <Header>
         <div id="Header">
           <h2>Reusable React Components</h2>
-          <p>This simple header uses the children prop, with all jsx and style rules passed from the parent.</p>
         </div>
       </Header>
+      <DropDownSelect />
     </div>
   );
 }
